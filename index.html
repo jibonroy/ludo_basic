@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <main>
+        <div class="red-dice">
+            <img src="./src/dice4.png" id="red-dice" width="80%" style="margin: 20px; cursor: pointer;" alt=""
+                srcset="">
+        </div>
+        <div class="blue-dice">
+            <img src="./src/dice4.png" id="blue-dice" width="80%" style="margin: 20px; cursor: pointer;" alt=""
+                srcset="">
+        </div>
+        <div class="yellow-dice">
+            <img src="./src/dice4.png" id="yellow-dice" width="80%" style="margin: 20px; cursor: pointer;" alt=""
+                srcset="">
+        </div>
+        <div class="green-dice">
+            <img src="./src/dice4.png" id="green-dice" width="80%" style="margin: 20px; cursor: pointer;" alt=""
+                srcset="">
+        </div>
+        <div class="corner">
+            <div class="area">
+                <div class="red_box">
+                    <div class="red_dots">
+                        <img class="red-loc-1" src="./src/red-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="red loc">
+                    </div>
+                    <div class="red_dots">
+                        <img class="red-loc-2" src="./src/red-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="red loc">
+                    </div>
+                    <div class="red_dots">
+                        <img class="red-loc-3" src="./src/red-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="red loc">
+                    </div>
+                    <div class="red_dots">
+                        <img class="red-loc-4" src="./src/red-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="red loc">
+                    </div>
+                </div>
+                <div class="blue_box">
+                    <div class="blue_dots">
+                        <img class="blue-loc-1" src="./src/blue-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="blue loc">
+                    </div>
+                    <div class="blue_dots">
+                        <img class="red-loc-2" src="./src/blue-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="blue loc">
+                    </div>
+                    <div class="blue_dots">
+                        <img class="blue-loc-3" src="./src/blue-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="blue loc">
+                    </div>
+                    <div class="blue_dots">
+                        <img class="blue-loc-4" src="./src/blue-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="blue loc">
+                    </div>
+                </div>
+                <div class="green_box">
+                    <div class="green_dots">
+                        <img class="green-loc-1" src="./src/green-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="green loc">
+                    </div>
+                    <div class="green_dots">
+                        <img class="green-loc-2" src="./src/green-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="green loc">
+                    </div>
+                    <div class="green_dots">
+                        <img class="green-loc-3" src="./src/green-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="green loc">
+                    </div>
+                    <div class="green_dots">
+                        <img class="green-loc-4" src="./src/green-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="green loc">
+                    </div>
+                </div>
+                <div class="yellow_box">
+                    <div class="yellow_dots">
+                        <img class="yellow-loc-1" src="./src/yellow-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="yellow loc">
+                    </div>
+                    <div class="yellow_dots">
+                        <img class="yellow-loc-1" src="./src/yellow-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="yellow loc">
+                    </div>
+                    <div class="yellow_dots">
+                        <img class="yellow-loc-1" src="./src/yellow-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="yellow loc">
+                    </div>
+                    <div class="yellow_dots">
+                        <img class="yellow-loc-1" src="./src/yellow-loc.png" width="120%"
+                            style="margin-top: -35px;margin-left: -4px;" alt="yellow loc">
+                    </div>
+                </div>
+                <!-- ========================game-boxes========================== -->
+                <div class="vartical_box1">
+                    <div class="red-12 white"></div>
+                    <div class="blue_mid-1 white"></div>
+                    <div class="blue-1 white"></div>
+
+                    <div class="red-11 white"></div>
+                    <div class="blue_mid-2 blue"></div>
+                    <div class="blue-2 blue"></div>
+
+                    <div class="red-10 white"></div>
+                    <div class="blue_mid-3 blue"></div>
+                    <div class="blue-3 white"></div>
+
+                    <div class="red-9 white"></div>
+                    <div class="blue_mid-4 blue"></div>
+                    <div class="blue-4 white"></div>
+
+                    <div class="red-8 white"></div>
+                    <div class="blue_mid-5 blue"></div>
+                    <div class="blue-5 white"></div>
+
+                    <div class="red-7 white"></div>
+                    <div class="blue_mid-6 blue"></div>
+                    <div class="blue-6 white"></div>
+                </div>
+                <!-- ======================triangle====================== -->
+                <div class="triangle-blue"></div>
+
+                <div class="hrizntal_box2">
+                    <div class="blue-7 white"></div>
+                    <div class="blue-8 white"></div>
+                    <div class="blue-9 white"></div>
+
+                    <div class="blue-10 white"></div>
+                    <div class="blue-11 white"></div>
+                    <div class="blue-12 white"></div>
+
+                    <div class="yellow_mid-6 yellow"></div>
+                    <div class="yellow_mid-5 yellow"></div>
+                    <div class="yellow_mid-4 yellow"></div>
+
+                    <div class="yellow_mid-3 yellow"></div>
+                    <div class="yellow_mid-2 yellow"></div>
+                    <div class="yellow_mid-1 white"></div>
+
+                    <div class="yellow-6 white"></div>
+                    <div class="yellow-5 white"></div>
+                    <div class="yellow-4 white"></div>
+
+                    <div class="yellow-3 white"></div>
+                    <div class="yellow-2 yellow"></div>
+                    <div class="yellow-1 white"></div>
+                </div>
+
+                <!-- ======================triangle====================== -->
+                <div class="triangle-yellow"></div>
+
+                <div class="vartical_box3">
+                    <div class="green-6 white"></div>
+                    <div class="green_mid-6 green"></div>
+                    <div class="yellow-7 white"></div>
+
+                    <div class="green-5 white"></div>
+                    <div class="green_mid-5 green"></div>
+                    <div class="yellow-8 white"></div>
+
+                    <div class="green-4 white"></div>
+                    <div class="green_mid-4 green"></div>
+                    <div class="yellow-9 white"></div>
+
+                    <div class="green-3 white"></div>
+                    <div class="green_mid-3 green"></div>
+                    <div class="yellow-10 white"></div>
+
+                    <div class="green-2 green"></div>
+                    <div class="green_mid-2 green"></div>
+                    <div class="yellow-11 white"></div>
+
+                    <div class="green-1 white"></div>
+                    <div class="green_mid-1 white"></div>
+                    <div class="yellow-12 white"></div>
+
+                </div>
+
+                <!-- ======================triangle====================== -->
+                <div class="triangle-green"></div>
+
+                <div class="hrizntal_box4">
+                    <div class="red-1 white"></div>
+                    <div class="red-2 red"></div>
+                    <div class="red-3 white"></div>
+
+                    <div class="red-4 white"></div>
+                    <div class="red-5 white"></div>
+                    <div class="red-6 white"></div>
+
+                    <div class="red_mid-1 white"></div>
+                    <div class="red_mid-3 red"></div>
+                    <div class="red_mid-3 red"></div>
+
+                    <div class="red_mid-3 red"></div>
+                    <div class="red_mid-4 red"></div>
+                    <div class="red_mid-3 red"></div>
+
+                    <div class="green-12 white"></div>
+                    <div class="green-11 white"></div>
+                    <div class="green-10 white"></div>
+
+                    <div class="green-9 white"></div>
+                    <div class="green-8 white"></div>
+                    <div class="green-7 white"></div>
+
+                </div>
+                <!-- ======================triangle====================== -->
+                <div class="triangle-red "></div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./ludo.js"></script>
+</body>
+
+</html>

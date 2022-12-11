@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+/* ===============colors============== */
+.red{
+    background-color: red;
+    border: 2.5px solid;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 0;
+}
+.blue{
+    background-color: blue;
+    border: 2.5px solid;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 0;
+}
+.yellow{
+    background-color: rgb(255, 217, 0);
+    border: 2.5px solid;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 0;
+}
+.green{
+    background-color: green;
+    border: 2.5px solid;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 0;
+}
+.white{
+    background-color: white;
+    border: 2.5px solid;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 0;
+}
+main{
+    margin: auto;
+    width: 1200px;
+    border: 2px solid;
+    box-sizing: border-box;
+    position: relative;
+}
+/* ==================dice roller================ */
+.red-dice{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    border: 25px solid red;
+    top: 0;
+    animation: red_anymation 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes red_anymation{
+    from {
+        border-color: red;
+    }
+    to{
+        border-color: rgb(197, 95, 0);
+    }
+}
+.blue-dice{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    right: 0;
+    border: 25px solid blue;
+    top: 0;
+    animation: blue_anymation 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blue_anymation{
+    from {
+        border-color: blue;
+    }
+    to{
+        border-color: rgb(0, 173, 253);
+    }
+}
+.yellow-dice{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    right: 0;
+    border: 25px solid rgb(255, 217, 0);
+    bottom: 0;
+    animation: yellow_anymation 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes yellow_anymation{
+    from {
+        border-color: rgb(255, 217, 0);
+    }
+    to{
+        border-color: rgb(255, 115, 0);
+    }
+}
+.green-dice{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    border: 25px solid rgb(5, 187, 5);
+    bottom: 0;
+    animation: green_anymation 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes green_anymation{
+    from {
+        border-color: green;
+    }
+    to{
+        border-color: darkgreen;
+    }
+}
+.corner{
+    height: 687px;
+    width: 687px;
+    margin: auto;
+    padding: 3px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+/* =============area============ */
+.area{
+    height: 675px;
+    width: 675px;
+    margin: 5px auto;
+    border: 2px solid black;
+    position: relative;
+}
+/* ================box=================== */
+.red_box{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 45px solid red;
+}
+
+.blue_box{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 45px solid blue;
+}
+
+.green_box{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 45px solid green;
+}
+
+.yellow_box{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 45px solid rgb(255, 217, 0);
+}
+/* =============dots=============== */
+.red_dots{
+    height: 35px;
+    width: 35px;
+    border: 2px solid ;
+    border-radius: 50%;
+    float: left;
+    margin: 25px;
+    background-color: red;
+}
+
+.blue_dots{
+    height: 35px;
+    width: 35px;
+    border: 2px solid ;
+    border-radius: 50%;
+    float: left;
+    margin: 25px;
+    background-color: blue;
+}
+.green_dots{
+    height: 35px;
+    width: 35px;
+    border: 2px solid ;
+    border-radius: 50%;
+    float: left;
+    margin: 25px;
+    background-color: green;
+}
+.yellow_dots{
+    height: 35px;
+    width: 35px;
+    border: 2px solid ;
+    border-radius: 50%;
+    float: left;
+    margin: 25px;
+    background-color: rgb(255, 217, 0);
+}
+/* ===========virtical_box============= */
+.vartical_box1{
+    width: 135px;
+    height: 270px;
+    background-color: rgba(44, 43, 43, 0.521);
+    position: absolute;
+    left: 270px;
+}
+
+.vartical_box3{
+    width: 135px;
+    height: 270px;
+    background-color: rgba(44, 43, 43, 0.521);
+    position: absolute;
+    left: 270px;
+    bottom: 0;
+}
+/* ============hrizntal_box============ */
+.hrizntal_box2{
+    width: 270px;
+    height: 135px;
+    background-color: rgba(44, 43, 43, 0.521);
+    position: absolute;
+    top: 270px;
+    right: 0;
+}
+.hrizntal_box4{
+    width: 270px;
+    height: 135px;
+    background-color: rgba(44, 43, 43, 0.521);
+    position: absolute;
+    top: 270px;
+    left: 0;
+}
+/* ================triangles================= */
+.triangle-blue{
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    width: 0;
+    height: 0;
+    border-left: 67.5px solid transparent;
+    border-right: 67.5px solid transparent;
+    border-top: 67.5px solid blue;
+}
+
+.triangle-yellow{
+    position: absolute;
+    top: 270px;
+    right: 270px;
+    width: 0;
+    height: 0;
+    border-top: 67.5px solid transparent;
+    border-bottom: 67.5px solid transparent;
+    border-right: 67.5px solid rgb(255, 217, 0);
+}
+
+.triangle-green{
+    position: absolute;
+    bottom: 270px;
+    left: 270px;
+    width: 0;
+    height: 0;
+    border-left: 67.5px solid transparent;
+    border-right: 67.5px solid transparent;
+    border-bottom: 67.5px solid green;
+}
+
+.triangle-red{
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    width: 0;
+    height: 0;
+    border-top: 67.5px solid transparent;
+    border-bottom: 67.5px solid transparent;
+    border-left: 67.5px solid red;
+}
